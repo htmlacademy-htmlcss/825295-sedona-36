@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Aleksandr  Ilyukhin](https://up.htmlacademy.ru/htmlcss/36/user/825295).
-* Наставник: `Дмитрий Гуляев`.
+* Наставник: `Дмитрий Гуляев`.(https://htmlacademy.ru/profile/dima)
 
 ---
 
