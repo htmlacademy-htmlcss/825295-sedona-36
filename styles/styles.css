@@ -1,0 +1,300 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/pt-sans-bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/pt-sans-italic.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/pt-sans-bold-italic.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans Narrow";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/pt-sans-narrow-bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/** Шапка **/
+.navigation-list {
+  text-align: left;
+  list-style: none;
+}
+
+.navigation-link {
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 700;
+  vertical-align: top;
+}
+
+.user-list {
+  list-style: none;
+  text-align: center;
+}
+
+.user-link-want-here {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  vertical-align: center;
+}
+
+.user-button {
+  background-color: #756157;
+  width: 160px;
+  height: 36px;
+  border-radius: 4px;
+}
+
+/** Главное содержимое **/
+.main-index {
+  background: url("../images/welcome/index-background.jpg") no-repeat;
+}
+
+.advantages-sedona {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.advantages-reasons {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  vertical-align: top;
+  color: #333333;
+}
+
+.visually-hidden {
+  visibility: hidden;
+}
+
+.hero {
+  text-align: center;
+}
+
+.advantages-list {
+  list-style: none;
+}
+
+.advantages-title {
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  text-transform: uppercase;
+  vertical-align: top;
+}
+
+.advantages-title-white {
+  color: #ffffff;
+}
+
+.advantages-item {
+  text-align: center;
+}
+
+.advantages-item-blue {
+  background-color: #82B3D3;
+}
+
+.advantages-description {
+  color: #333333;
+  vertical-align: top;
+}
+
+/** Services **/
+.services {
+  text-align: center;
+}
+
+.services-list {
+  list-style: none;
+  text-align: center;
+}
+
+.house-image {
+  background-image: url("../images/services-list/house.svg");
+  background-repeat: no-repeat;
+  width: 75px;
+  height: 72px;
+}
+
+.food-image {
+  background-image: url("../images/services-list/food.svg");
+  background-repeat: no-repeat;
+  width: 74px;
+  height: 70px;
+}
+
+.souvenirs-image {
+  background-image: url("../images/services-list/souvenirs.svg");
+  background-repeat: no-repeat;
+  width: 64px;
+  height: 76px;
+}
+
+.services-invitation {
+  font-size: 30px;
+  line-height: 36px;
+  vertical-align: top;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.services-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  vertical-align: top;
+  font-weight: 700;
+}
+
+.services-staff {
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+  vertical-align: top;
+}
+
+.services-description {
+  color: #333333;
+  vertical-align: top;
+}
+/** ЗАИНТЕРЕСОВАЛИСЬ? **/
+.searching-for-hotels {
+  text-align: center;
+}
+
+.searching-title {
+  font-size: 30px;
+  line-height: 36px;
+  vertical-align: top;
+  text-transform: uppercase;
+}
+
+.searching-description {
+  font-size: 22px;
+  line-height: 26px;
+  vertical-align: top;
+  color: #333333;
+}
+
+.searching-link {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 36px;
+  vertical-align: center;
+  font-weight: 700;
+}
+
+.searching-button {
+  padding: 8px, 50px, 8px, 50px;
+  background-color: #756157;
+  width: 376px;
+  height: 52px;
+  border-radius: 4px;
+}
+
+/** Subscription **/
+.subscription-form{
+  background: url("../images/subscribe.jpg") no-repeat;
+  width: 1200px;
+  height: 415px;
+}
+
+.subscription-title {
+  font-size: 30px;
+  line-height: 36px;
+  color: #ffffff;
+  text-transform: uppercase;
+  vertical-align: top;
+  text-align: left;
+  font-weight: 700;
+}
+
+.subscription-description {
+  font-size: 22px;
+  line-height: 26px;
+  color: #ffffff;
+  vertical-align: top;
+  text-align: center;
+}
+
+.subscription-input {
+  width: 452px;
+  height: 52px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.subscription-button {
+  background-color: #82B3D3;
+  width: 232px;
+  height: 52px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.subscription-label {
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  vertical-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+/** Подвал **/
+.contacts-list {
+  list-style: none;
+}
+
+.phone-number {
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  color: #000000;
+  vertical-align: top;
+  text-align: center;
+}
