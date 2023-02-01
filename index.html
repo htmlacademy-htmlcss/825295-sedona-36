@@ -33,13 +33,13 @@
       </nav>
       <ul class="user-list">
         <li class="user-item">
-          <a class="user-link" href="#">
-            <img src="images/header/search.svg" width="20" height="20" alt="Поиск">
+          <a class="user-link user-link-search" href="#">
+            <span class="visually-hidden">Поиск</span>
           </a>
         </li>
         <li class="user-item">
-          <a class="user-link" href="#">
-            <img src="images/header/heart.svg" width="18" height="17" alt="В избранное">
+          <a class="user-link user-link-to-favorites" href="#">
+            <span class="visually-hidden">В избранное</span>
           </a>
         </li>
         <li class="user-item user-item-want-here">
@@ -93,21 +93,15 @@
         <p class="services-staff">Опытный персонал и качественное обслуживание!</p>
         <ul class="services-list">
           <li class="services-item">
-            <h3 class="services-title">Жилье</h3>
-            <div class="house-image">
-            </div>
+            <h3 class="services-title services-title-house">Жилье</h3>
             <p class="services-description">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
           </li>
           <li class="services-item">
-            <h3 class="services-title">Еда</h3>
-            <div class="food-image">
-            </div>
+            <h3 class="services-title services-title-food">Еда</h3>
             <p class="services-description">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!</p>
           </li>
           <li class="services-item">
-            <h3 class="services-title">Сувениры</h3>
-            <div class="souvenirs-image">
-            </div>
+            <h3 class="services-title services-title-souvenirs">Сувениры</h3>
             <p class="services-description">Не только китайского,<br>но и настоящего местного<br>производства!</p>
           </li>
         </ul>
@@ -115,11 +109,9 @@
       <section class="searching-for-hotels">
         <h2 class="searching-title">Заинтересовались?</h2>
         <p class="searching-description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <div class="searching-button">
           <a class="searching-link" href="catalog.html">
             Поиск гостиницы в Седоне
           </a>
-        </div>
       </section>
       <section class="subscription-form">
         <h2 class="subscription-title">Подпишитесь на рассылку</h2>
@@ -127,7 +119,7 @@
         <form action="https://echo.htmlacademy.ru/" method="get">
           <input class="subscription-input" type="email" name="email" placeholder="Ваш e-mail" required>
           <button class="subscription-button" type="submit">
-            <span class="subscription-label">Подписаться</span>
+            Подписаться
           </button>
         </form>
       </section>

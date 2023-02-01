@@ -66,6 +66,19 @@ body {
   text-align: center;
 }
 
+.user-link-search {
+  background-image: url("../images/header/search.svg");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+
+}
+
+.user-link-to-favorites {
+  background-image: url("../images/header/heart.svg");
+  background-size: 18px 17px;
+  background-repeat: no-repeat;
+}
+
 .user-link-want-here {
   font-size: 16px;
   line-height: 20px;
@@ -151,27 +164,6 @@ body {
   text-align: center;
 }
 
-.house-image {
-  background-image: url("../images/services-list/house.svg");
-  background-repeat: no-repeat;
-  width: 75px;
-  height: 72px;
-}
-
-.food-image {
-  background-image: url("../images/services-list/food.svg");
-  background-repeat: no-repeat;
-  width: 74px;
-  height: 70px;
-}
-
-.souvenirs-image {
-  background-image: url("../images/services-list/souvenirs.svg");
-  background-repeat: no-repeat;
-  width: 64px;
-  height: 76px;
-}
-
 .services-invitation {
   font-size: 30px;
   line-height: 36px;
@@ -186,6 +178,24 @@ body {
   text-transform: uppercase;
   vertical-align: top;
   font-weight: 700;
+}
+
+.services-title-house::before {
+  content: url("../images/services-list/house.svg");
+  width: 75px;
+  height: 72px;
+}
+
+.services-title-food::before {
+  content: url("../images/services-list/food.svg");
+  width: 74px;
+  height: 70px;
+}
+
+.services-title-souvenirs::before {
+  content: url("../images/services-list/souvenirs.svg");
+  width: 64px;
+  height: 76px;
 }
 
 .services-staff {
@@ -225,15 +235,12 @@ body {
   font-size: 20px;
   line-height: 36px;
   vertical-align: center;
+  text-align: center;
   font-weight: 700;
-}
-
-.searching-button {
   padding: 8px, 50px, 8px, 50px;
   background-color: #756157;
   width: 376px;
   height: 52px;
-  border-radius: 4px;
 }
 
 /** Subscription **/
@@ -274,6 +281,14 @@ body {
   height: 52px;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
+  border-style: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  vertical-align: center;
+  text-align: center;
 }
 
 .subscription-label {
@@ -297,4 +312,54 @@ body {
   color: #000000;
   vertical-align: top;
   text-align: center;
+}
+
+/** КАТАЛОГ **/
+
+/** Хлебные крошки **/
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs-link {
+  background-image: url("../images/breadcumbs/to-index-icon.svg");
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  text-decoration: none;
+}
+
+.breadcrumbs-link::after {
+  content: url("../images/breadcumbs/arrow-icon.svg");
+  width: 6px;
+  height: 10px;
+}
+
+/** Hotel-parameters **/
+.hotel-parameters {
+  background-image: url("../images/filter.jpg");
+  background-size: 1200px 412px;
+  background-repeat: no-repeat;
+}
+
+/** Catalog-cards **/
+.catalog-icon-list {
+  list-style: none;
+}
+
+.catalog-icon-item-grid {
+  background-image: url("../images/catalog-cards-header/modal-window.svg");
+  background-size: 16px 14px;
+  background-repeat: no-repeat;
+}
+
+.catalog-icon-item-full-screen {
+  background-image: url("../images/catalog-cards-header/modal-window-2.svg");
+  background-size: 16px 14px;
+  background-repeat: no-repeat;
+}
+
+.catalog-icon-item-list {
+  background-image: url("../images/catalog-cards-header/modal-window-3.svg");
+  background-size: 16px 14px;
+  background-repeat: no-repeat;
 }

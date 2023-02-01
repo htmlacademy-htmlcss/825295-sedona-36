@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -60,7 +61,6 @@
               </a>
             </li>
             <li>
-              <img src="images/breadcumbs/arrow-icon.svg" width="6" height="10" alt="Текущая страница">
               Гостиницы
             </li>
           </ol>
@@ -143,9 +143,17 @@
             <option>Сначала дорогие</option>
             <option>Сначала популярные</option>
           </select>
-          <span class="visuaaly-hidden">Модальное окно номер 1</span>
-          <span class="visuaaly-hidden">Модальное окно номер 2</span>
-          <span class="visuaaly-hidden">Модальное окно номер 3</span>
+          <ul class="catalog-icon-list">
+            <li class="catalog-icon-item catalog-icon-item-grid">
+              <span class="visually-hidden">Сетка</span>
+            </li>
+            <li class="catalog-icon-item catalog-icon-item-full-screen">
+              <span class="visually-hidden">Полноэкранный режим</span>
+            </li>
+            <li class="catalog-icon-item catalog-icon-item-list">
+              <span class="visually-hidden">Список</span>
+            </li>
+          </ul>
         </header>
         <ul class="catalog-cards-list">
           <li class="catalog-cards-item">
