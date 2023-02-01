@@ -87,13 +87,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   vertical-align: center;
-}
-
-.user-button {
   background-color: #756157;
-  width: 160px;
-  height: 36px;
-  border-radius: 4px;
 }
 
 /** Главное содержимое **/
@@ -244,8 +238,10 @@ body {
 }
 
 /** Subscription **/
-.subscription-form{
-  background: url("../images/subscribe.jpg") no-repeat;
+.subscription-form-index {
+  background-image: url("../images/subscribe.jpg");
+  background-repeat: no-repeat;
+  background-color: #000000;
   width: 1200px;
   height: 415px;
 }
@@ -273,6 +269,7 @@ body {
   height: 52px;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
+  border-style: none;
 }
 
 .subscription-button {
@@ -316,9 +313,34 @@ body {
 
 /** КАТАЛОГ **/
 
+/** Hotel-parameters **/
+.hotel-parameters {
+  background-image: url("../images/filter.jpg");
+  background-size: 1200px 412px;
+  background-repeat: no-repeat;
+  background-color: #000000;
+}
+
+.hotel-parameters-title {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+  text-align: left;
+  vertical-align: top;
+  color: #ffffff;
+}
+
 /** Хлебные крошки **/
-.breadcrumbs {
+.breadcrumbs-list {
   list-style: none;
+}
+
+.breadcrumbs-item-text {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: left;
+  vertical-align: top;
 }
 
 .breadcrumbs-link {
@@ -334,14 +356,71 @@ body {
   height: 10px;
 }
 
-/** Hotel-parameters **/
-.hotel-parameters {
-  background-image: url("../images/filter.jpg");
-  background-size: 1200px 412px;
-  background-repeat: no-repeat;
+/** Catalog-filter-group **/
+.catalog-filter-title {
+  font-size: 20px;
+  line-height: 24px;
+  text-align: left;
+  vertical-align: top;
+  color: #ffffff;
+}
+
+.catalog-filter-list {
+  list-style: none;
+}
+
+.catalog-filter-label {
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+  text-align: left;
+  vertical-align: top;
+}
+
+.catalog-filter-label-cost {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 700;
+  text-align: left;
+  vertical-align: center;
+}
+
+.catalog-filter-button {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: center;
+}
+
+.catalog-filter-button-apply {
+  background-color: #82B3D3;
 }
 
 /** Catalog-cards **/
+.hotels-count {
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: left;
+  vertical-align: top;
+}
+
+.catalog-cards-list {
+  list-style: none;
+}
+
+.catalog-cards-item {
+  text-align: left;
+  vertical-align: top;
+  color: #333333;
+}
+
 .catalog-icon-list {
   list-style: none;
 }
@@ -362,4 +441,95 @@ body {
   background-image: url("../images/catalog-cards-header/modal-window-3.svg");
   background-size: 16px 14px;
   background-repeat: no-repeat;
+}
+
+.catalog-cards-link {
+  text-decoration: none;
+  color: #000000;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: left;
+  vertical-align: top;
+  font-weight: 700;
+}
+
+.catalog-cards-hotel {
+  text-align: left;
+  vertical-align: top;
+  color: #333333;
+  font-weight: 400;
+}
+
+.catalog-cards-price {
+  text-align: right;
+  vertical-align: top;
+  color: #333333;
+  font-weight: 400;
+}
+
+.catalog-cards-link {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #756157;
+  width: 140px;
+  height: 36px;
+  font-weight: 700;
+  padding: 8px, 50px, 8px, 50px;
+  text-align: center;
+  vertical-align: center;
+}
+
+.catalog-cards-link-to-favorites {
+  background-color: #82B3D3;
+}
+
+.catalog-cards-rate {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: top;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+/**Pagination **/
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-link {
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+  line-height: 36px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  vertical-align: center;
+}
+
+.pagination-link:not(.pagination-current) {
+  background-color: #82B3D3;
+  color: #ffffff;
+}
+
+/** Subscription **/
+.subscription-title-catalog {
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
+  vertical-align: top;
+  text-align: left;
+  font-weight: 700;
+}
+
+.subscription-description-catalog {
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+  vertical-align: top;
+  text-align: center;
 }
