@@ -55,9 +55,42 @@ body {
 }
 
 /** Шапка **/
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .navigation-list {
-  text-align: left;
   list-style: none;
+  width: 700px;
+  height: 64px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-left: 70px;
+}
+
+.navigation-item:first-child {
+  width: 140x;
+  height: 70px;
+  margin-right: 28px;
+}
+
+.navigation-item:not(:first-child) {
+  padding: 20px 16px 20px 16px;
+}
+
+.navigation-item:nth-child(2) {
+  width: 100px;
+}
+
+.navigation-item:nth-child(3) {
+  width: 114px;
+}
+
+.navigation-item:last-child {
+  width: 125px;
 }
 
 .navigation-link {
@@ -67,11 +100,33 @@ body {
   text-decoration: none;
   font-weight: 700;
   vertical-align: top;
+  text-align: left;
 }
 
 .user-list {
   list-style: none;
-  text-align: center;
+  max-width: 312px;
+  height: 64px;
+  display: flex;
+  margin: 0;
+  margin-left: auto;
+  margin-right: 70px;
+  padding: 0;
+}
+
+.user-item {
+  padding: 22px 12px;
+  width: 44px;
+}
+
+.user-item:last-child {
+  width: 160px;
+  padding: 14px 20px;
+  padding-right: 0;
+}
+
+.user-link {
+  display: block;
 }
 
 .user-link-search {
@@ -95,20 +150,33 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   vertical-align: center;
+  text-align: center;
   background-color: #756157;
+  width: 160px;
 }
 
 /** Главное содержимое **/
 .main-index {
   background: url("../images/welcome/index-background.jpg") no-repeat;
+  margin: 0 auto;
+  width: 1200px;
+  flex-grow: 1;
 }
 
+.welcome-img {
+  margin: 51px 371px 82px 371px;
+  display: block;
+}
+
+/** Advantages **/
 .advantages-sedona {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   text-align: center;
   vertical-align: top;
+  margin-bottom: 25px;
+  text-transform: uppercase;
 }
 
 .advantages-reasons {
@@ -117,6 +185,7 @@ body {
   text-align: center;
   vertical-align: top;
   color: #333333;
+  margin-bottom: 69px;
 }
 
 .visually-hidden {
@@ -129,6 +198,25 @@ body {
 
 .advantages-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages-item {
+  width: 400px;
+  height: 385px;
+  box-sizing: border-box;
+  padding: 103px 85px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.advantages-item:nth-child(2),
+.advantages-item:last-child {
+  width: 800px;
+  padding: 0;
 }
 
 .advantages-title {
@@ -136,15 +224,10 @@ body {
   line-height: 28px;
   color: #000000;
   text-transform: uppercase;
-  vertical-align: top;
 }
 
 .advantages-title-white {
   color: #ffffff;
-}
-
-.advantages-item {
-  text-align: center;
 }
 
 .advantages-item-blue {
@@ -154,6 +237,11 @@ body {
 .advantages-description {
   color: #333333;
   vertical-align: top;
+  text-align: center;
+}
+
+.advantages-description-white {
+  color: #ffffff;
 }
 
 /** Services **/
@@ -163,7 +251,14 @@ body {
 
 .services-list {
   list-style: none;
+  display: flex;
+}
+
+.services-item {
+  width: 400px;
   text-align: center;
+  vertical-align: top;
+  padding: 80px 85px;
 }
 
 .services-invitation {
@@ -172,6 +267,7 @@ body {
   vertical-align: top;
   text-transform: uppercase;
   font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .services-title {
@@ -209,11 +305,19 @@ body {
 
 .services-description {
   color: #333333;
-  vertical-align: top;
 }
 /** ЗАИНТЕРЕСОВАЛИСЬ? **/
 .searching-for-hotels {
   text-align: center;
+  vertical-align: top;
+  width: 1200px;
+  height: 406px;
+}
+
+.searching-for-hotels-container {
+  width: 592px;
+  height: 214px;
+  margin: 96px 304px;
 }
 
 .searching-title {
@@ -221,6 +325,7 @@ body {
   line-height: 36px;
   vertical-align: top;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .searching-description {
@@ -228,6 +333,7 @@ body {
   line-height: 26px;
   vertical-align: top;
   color: #333333;
+  margin-bottom: 54px;
 }
 
 .searching-link {
@@ -239,7 +345,6 @@ body {
   vertical-align: center;
   text-align: center;
   font-weight: 700;
-  padding: 8px, 50px, 8px, 50px;
   background-color: #756157;
   width: 376px;
   height: 52px;
@@ -252,7 +357,15 @@ body {
   background-color: #000000;
   width: 1200px;
   height: 415px;
+  padding: 96px, 258px, 104px, 258px;
 }
+
+.subscription-form-container {
+  margin: 0 auto;
+  width: 684px;
+  height: 215px;
+}
+
 
 .subscription-title {
   font-size: 30px;
@@ -262,6 +375,7 @@ body {
   vertical-align: top;
   text-align: left;
   font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .subscription-description {
@@ -270,6 +384,7 @@ body {
   color: #ffffff;
   vertical-align: top;
   text-align: center;
+  margin-bottom: 54px;
 }
 
 .subscription-input {
@@ -306,8 +421,46 @@ body {
 }
 
 /** Подвал **/
-.contacts-list {
+.page-footer {
+  width: 1200px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+.footer-container {
+  display: flex;
+  width: 1060px;
+  justify-content: space-between;
+  margin: 0 70px;
+}
+
+.social-list {
+  width: 142px;
+  display: flex;
+  align-items: center;
   list-style: none;
+  margin: 0;
+  margin-right: 42px;
+  padding: 0;
+}
+
+.social-item {
+  padding: 0 10px;
+}
+
+.social-item:nth-child(2) {
+  padding: 1px 10px;
+}
+
+.phone-wrapper {
+  width: 720px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-wrapper {
+  width: 115px;
+  margin-left: 42px;
 }
 
 .phone-number {
@@ -540,12 +693,4 @@ body {
   color: #333333;
   vertical-align: top;
   text-align: center;
-}
-
-/** Сетка **/
-
-
-.main-container {
-  flex-grow: 1;
-
 }
