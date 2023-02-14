@@ -48,10 +48,6 @@ body {
   height: 100%;
 }
 
-button {
-  font-family: inherit;
-}
-
 .page-container {
   display: flex;
   flex-direction: column;
@@ -214,6 +210,17 @@ button {
   color: #ffffff;
 }
 
+.advantages-item-blue {
+  width: 1200px;
+  display: flex;
+  padding: 0;
+}
+
+.advantages-image {
+  order: -1;
+  flex-grow: 1;
+}
+
 .advantages-item-square,
 .advantages-item-tourists {
   background: rgba(131, 179, 211, 0.12);
@@ -223,11 +230,6 @@ button {
 .advantages-item-road {
   background: rgba(131, 179, 211, 0.2);
   color: #000000;
-}
-
-.advantages-item-image {
-  width: 800px;
-  padding: 0;
 }
 
 .advantages-title {
@@ -291,19 +293,19 @@ button {
 
 .services-title-house::before {
   content: url("../images/services-list/house.svg");
-  width: 75px;
+  min-width: 75px;
   height: auto
 }
 
 .services-title-food::before {
   content: url("../images/services-list/food.svg");
-  width: 74px;
+  min-width: 74px;
   height: auto
 }
 
 .services-title-souvenirs::before {
   content: url("../images/services-list/souvenirs.svg");
-  width: 64px;
+  min-width: 64px;
   height: auto
 }
 
@@ -421,7 +423,6 @@ button {
   line-height: 36px;
   font-weight: 700;
   text-align: center;
-  cursor: pointer;
 }
 
 .subscription-label {
@@ -496,7 +497,7 @@ button {
 .breadcrumbs-link::after {
   content: url("../images/breadcumbs/arrow-icon.svg");
   min-width: 6px;
-  height: auto;
+  height: 10px;
 }
 
 .catalog-filter {
@@ -764,7 +765,7 @@ button {
 }
 
 .catalog-cards-button {
-  width: 140px;
+  min-width: 140px;
   max-height: 36px;
   font-size: 16px;
   line-height: 20px;
@@ -787,6 +788,7 @@ button {
 
 .catalog-cards-button-in-favorites {
   background-color: #7DB54F;
+  padding: 8px 18px;
 }
 
 .catalog-cards-rate {
@@ -844,9 +846,12 @@ button {
   font-size: 20px;
   line-height: 36px;
   padding: 11px 25px 13px 23px;
-  display: flex;
-  justify-content: center;
   box-sizing: border-box;
+  display: block;
+}
+
+.pagination-link-ten {
+  padding: 12px 19px 13px 19px;
 }
 
 .pagination-current,
