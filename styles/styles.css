@@ -210,7 +210,7 @@ body {
   color: #ffffff;
 }
 
-.advantages-item-blue {
+.advantages-item-city {
   width: 1200px;
   display: flex;
   padding: 0;
@@ -247,7 +247,7 @@ body {
   margin: 0;
 }
 
-.advantages-item-blue .advantages-description {
+.advantages-item-city .advantages-description {
   color: #ffffff;
 }
 
@@ -293,20 +293,20 @@ body {
 
 .services-title-house::before {
   content: url("../images/services-list/house.svg");
-  min-width: 75px;
-  height: auto
+  width: 75px;
+  height: 72px;
 }
 
 .services-title-food::before {
   content: url("../images/services-list/food.svg");
-  min-width: 74px;
-  height: auto
+  width: 74px;
+  height: 70px;
 }
 
 .services-title-souvenirs::before {
   content: url("../images/services-list/souvenirs.svg");
-  min-width: 64px;
-  height: auto
+  width: 64px;
+  height: 76px;
 }
 
 .services-staff {
@@ -423,6 +423,7 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-align: center;
+  cursor: pointer;
 }
 
 .subscription-label {
@@ -601,6 +602,7 @@ body {
   border-style: none;
   border-radius: 4px;
   padding: 8px 50px;
+  cursor: pointer;
 }
 
 .catalog-filter-button-apply {
@@ -657,6 +659,7 @@ body {
   padding: 14px 12px;
   min-width: 48px;
   min-height: 48px;
+  cursor: pointer;
 }
 
 .catalog-header-icon-item-grid .catalog-header-icon-button {
@@ -758,7 +761,7 @@ body {
 
 .catalog-cards-button-container {
   width: 300px;
-  min-height: 36px;
+  height: 36px;
   display: flex;
   gap: 20px;
   margin-bottom: 16px;
@@ -766,7 +769,7 @@ body {
 
 .catalog-cards-button {
   min-width: 140px;
-  max-height: 36px;
+  height: 36px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -774,16 +777,17 @@ body {
   text-decoration: none;
   color: #ffffff;
   background-color: #756157;
-  padding: 8px 20px;
+  padding: 8px 26px;
   border-style: none;
   border-radius: 4px;
   box-sizing: border-box;
-  display: flex;
-  justify-content: center;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .catalog-cards-button-to-favorites {
   background-color: #82B3D3;
+  padding: 8px 20px;
 }
 
 .catalog-cards-button-in-favorites {
