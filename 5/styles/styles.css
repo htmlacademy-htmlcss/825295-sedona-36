@@ -48,10 +48,6 @@ body {
   height: 100%;
 }
 
-button {
-  font-family: inherit;
-}
-
 .page-container {
   display: flex;
   flex-direction: column;
@@ -205,13 +201,24 @@ button {
 
 .advantages-item {
   width: 400px;
-  height: 385px;
+  min-height: 385px;
   box-sizing: border-box;
   padding: 103px 85px;
   text-align: center;
   vertical-align: top;
   background-color: #82B3D3;
   color: #ffffff;
+}
+
+.advantages-item-city {
+  width: 1200px;
+  display: flex;
+  padding: 0;
+}
+
+.advantages-image {
+  order: -1;
+  flex-grow: 1;
 }
 
 .advantages-item-square,
@@ -223,11 +230,6 @@ button {
 .advantages-item-road {
   background: rgba(131, 179, 211, 0.2);
   color: #000000;
-}
-
-.advantages-item-image {
-  width: 800px;
-  padding: 0;
 }
 
 .advantages-title {
@@ -245,7 +247,7 @@ button {
   margin: 0;
 }
 
-.advantages-item-blue .advantages-description {
+.advantages-item-city .advantages-description {
   color: #ffffff;
 }
 
@@ -325,7 +327,7 @@ button {
   text-align: center;
   vertical-align: top;
   width: 1200px;
-  height: 406px;
+  min-height: 406px;
   padding: 96px 304px 96px 304px;
   box-sizing: border-box;
 }
@@ -364,7 +366,7 @@ button {
 .subscription-section {
   box-sizing: border-box;
   width: 1200px;
-  height: 415px;
+  min-height: 415px;
   padding: 96px 258px 104px 258px;
 }
 
@@ -402,7 +404,7 @@ button {
 
 .subscription-input {
   width: 452px;
-  height: 52px;
+  min-height: 52px;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
   border-style: none;
@@ -411,7 +413,7 @@ button {
 .subscription-button {
   background-color: #82B3D3;
   width: 232px;
-  height: 52px;
+  min-height: 52px;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
   border-style: none;
@@ -421,6 +423,7 @@ button {
   line-height: 36px;
   font-weight: 700;
   text-align: center;
+  cursor: pointer;
 }
 
 .subscription-label {
@@ -459,7 +462,7 @@ button {
 
 .breadcrumbs-list {
   list-style: none;
-  padding: 0;
+  padding: 3px 0;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
@@ -468,9 +471,13 @@ button {
 
 .breadcrumbs-item {
   margin-right: 28px;
+  min-width: 13px;
+  height: 15px;
 }
 
 .breadcrumbs-item-text {
+  min-width: 73px;
+  min-height: 21px;
   color: #ffffff;
   font-size: 16px;
   line-height: 21px;
@@ -484,11 +491,13 @@ button {
   background-repeat: no-repeat;
   text-decoration: none;
   padding: 0 0 2px;
+  display: flex;
+  align-items: center;
 }
 
 .breadcrumbs-link::after {
   content: url("../images/breadcumbs/arrow-icon.svg");
-  width: 6px;
+  min-width: 6px;
   height: 10px;
 }
 
@@ -582,15 +591,18 @@ button {
 }
 
 .catalog-filter-button {
+  min-width: 191px;
+  min-height: 36px;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  vertical-align: center;
   border-style: none;
+  border-radius: 4px;
   padding: 8px 50px;
+  cursor: pointer;
 }
 
 .catalog-filter-button-apply {
@@ -601,11 +613,15 @@ button {
   background-color: transparent;
 }
 
+.catalog-cards {
+  padding-top: 50px;
+}
+
 .catalog-header-cards {
   width: 1060px;
   display: flex;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-bottom: 40px;
   box-sizing: border-box;
 }
 
@@ -636,11 +652,14 @@ button {
 
 .catalog-header-icon-item {
   width: 48px;
-  height: 48px;
+  min-height: 48px;
 }
 
 .catalog-header-icon-button {
   padding: 14px 12px;
+  min-width: 48px;
+  min-height: 48px;
+  cursor: pointer;
 }
 
 .catalog-header-icon-item-grid .catalog-header-icon-button {
@@ -667,10 +686,6 @@ button {
   border: none;
 }
 
-.catalog-cards-section {
-  margin-top: 40px;
-}
-
 .catalog-cards-list {
   list-style: none;
   display: flex;
@@ -687,6 +702,7 @@ button {
   display: flex;
   flex-direction: column;
   width: 340px;
+  min-height: 438px;
   margin-right: 20px;
   margin-bottom: 20px;
   box-sizing: border-box;
@@ -714,6 +730,7 @@ button {
 
 .catalog-cards-title {
   margin: 0;
+  margin-bottom: 16px;
 }
 
 .catalog-cards-link .card-img {
@@ -744,13 +761,14 @@ button {
 
 .catalog-cards-button-container {
   width: 300px;
+  height: 36px;
   display: flex;
   gap: 20px;
   margin-bottom: 16px;
 }
 
 .catalog-cards-button {
-  width: 140px;
+  min-width: 140px;
   height: 36px;
   font-size: 16px;
   line-height: 20px;
@@ -759,20 +777,22 @@ button {
   text-decoration: none;
   color: #ffffff;
   background-color: #756157;
-  padding: 8px 20px;
+  padding: 8px 26px;
   border-style: none;
   border-radius: 4px;
   box-sizing: border-box;
-  display: flex;
-  justify-content: center;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .catalog-cards-button-to-favorites {
   background-color: #82B3D3;
+  padding: 8px 20px;
 }
 
 .catalog-cards-button-in-favorites {
   background-color: #7DB54F;
+  padding: 8px 18px;
 }
 
 .catalog-cards-rate {
@@ -824,15 +844,18 @@ button {
 
 .pagination-link {
   width: 60px;
-  height: 60px;
+  min-height: 60px;
   text-decoration: none;
   color: #ffffff;
   font-size: 20px;
   line-height: 36px;
-  text-align: center;
   padding: 11px 25px 13px 23px;
-  display: block;
   box-sizing: border-box;
+  display: block;
+}
+
+.pagination-link-ten {
+  padding: 12px 19px 13px 19px;
 }
 
 .pagination-current,
@@ -860,7 +883,7 @@ button {
 
 .page-footer {
   width: 1200px;
-  height: 120px;
+  min-height: 120px;
   padding: 40px 70px 30px 70px;
   box-sizing: border-box;
   display: flex;
