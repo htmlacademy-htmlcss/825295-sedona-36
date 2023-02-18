@@ -206,7 +206,17 @@ body {
   padding: 103px 85px;
   text-align: center;
   vertical-align: top;
+  color: #ffffff;
+}
+
+.advantages-item-container {
   background-color: #82B3D3;
+  width: 400px;
+  min-height: 385px;
+  box-sizing: border-box;
+  padding: 103px 85px;
+  text-align: center;
+  vertical-align: top;
   color: #ffffff;
 }
 
@@ -372,8 +382,9 @@ body {
 
 .subscription-section-index {
   background-image: url("../images/subscribe.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
-  background-color: #000000;
+  background-color: #496d82;
 }
 
 .subscription-form {
