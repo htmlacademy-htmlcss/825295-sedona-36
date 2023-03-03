@@ -1744,16 +1744,28 @@ body {
 }
 
 .person-count {
-  min-width: 31px;
+  width: 31px;
   height: 48px;
   color: #000000;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
   background-color: #F2F2F2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border: 3px solid transparent;
+  text-align: center;
+}
+
+.person-count:hover {
+  background-color: #E6E6E6;
+}
+
+.person-count:focus {
+  border: 3px solid #83B3D3;
+  outline: none;
+}
+
+.person-count:focus:not(:placeholder-shown) {
+  border: 2px solid #000000;
 }
 
 .button-count {
