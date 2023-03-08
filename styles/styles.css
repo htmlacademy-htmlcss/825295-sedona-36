@@ -733,6 +733,10 @@ body {
   display: flex;
 }
 
+.filter-form {
+  display: flex;
+}
+
 .left-columns-container {
   display: flex;
   margin-right: 140px;
@@ -1610,6 +1614,11 @@ body {
   position: relative;
 }
 
+.modal-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
 .modal-heading {
   font-size: 30px;
   line-height: 36px;
@@ -1630,7 +1639,7 @@ body {
   border-radius: 50%;
   position: absolute;
   right: 52px;
-  top: 68px;
+  top: 64px;
 }
 
 .modal-button-close:hover {
@@ -1649,22 +1658,21 @@ body {
 
 .modal-form {
   width: 577px;
-  display: flex;
-  flex-direction: column;
-  gap: 48px;
+  margin-bottom: 31px;
 }
 
 .modal-form-group {
   display: flex;
   flex-wrap: wrap;
   width: 577px;
-  border: 1px solid transparent;
+  border: none;
   box-sizing: border-box;
   justify-content: space-between;
   align-items: center;
   padding: 0;
-  padding-bottom: 9px;
   margin: 0;
+  margin-bottom: 48px;
+  position: relative;
 }
 
 .modal-label {
@@ -1692,7 +1700,6 @@ body {
   background-size: 20px 20px;
   background-position: 402px 16px;
   font-family: inherit;
-  margin-bottom: 4px;
 }
 
 .modal-input:hover {
@@ -1717,39 +1724,43 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   position: absolute;
-  top: 219px;
-  left: 207px;
+  bottom: -26px;
+  left: 137px;
 }
 
 .departure-form-group .modal-description {
-  top: 315px;
+  bottom: -26px;
   color: #333333;
 }
 
 .modal-section-container {
   display: flex;
-  flex-wrap: wrap;
-  width: 582px;
-  gap: 88px;
+  width: 577px;
+  margin-bottom: 48px;
 }
 
 .modal-section-age {
-  width: 247px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-right: 88px;
+}
+
+.modal-section-children .modal-age-heading {
+  margin-right: 10px;
 }
 
 .modal-age-heading {
   font-size: 20px;
   line-height: 24px;
   margin: 0;
+  margin-right: 46px;
 }
 
 .tooltip {
-  margin-left: 10px;
   margin-top: auto;
   margin-bottom: auto;
+  margin-right: 46px;
   position: relative;
 }
 
@@ -1763,18 +1774,19 @@ body {
 }
 
 .tooltip-text {
+  height: 143px;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
   background: #333333;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
-  padding: 15px 18px 18px 22px;
+  padding: 20px 18px 18px 22px;
   box-sizing: border-box;
   width: 256px;
   position: absolute;
-  top: 41px;
-  left: -112px;
+  top: 40px;
+  left: -115px;
   display: none;
   z-index: 1;
 }
@@ -1792,8 +1804,9 @@ body {
   width: 19px;
   height: 9px;
   position: absolute;
-  top: -6px;
-  right: 128px;
+  top: -5px;
+  right: 119px;
+  transform: scale(2, 2);
 }
 
 .person-count {
@@ -1805,6 +1818,7 @@ body {
   font-weight: 700;
   background-color: #f2f2f2;
   border: 3px solid transparent;
+  box-sizing: border-box;
   text-align: center;
 }
 
@@ -1841,7 +1855,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .button-count svg {
   fill: rgba(117, 97, 87, 0.3);
   position: absolute;
-  top: 14px;
+  top: 11px;
   left: 10px;
   border-radius: 4px;
 }
@@ -1856,10 +1870,6 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .button-count:active {
   opacity: 0.2;
-}
-
-.button-count-minus {
-  margin-left: auto;
 }
 
 .button-modal-search {
