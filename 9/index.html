@@ -159,10 +159,12 @@
     </div>
     <div class="modal-container modal-container-close">
       <section class="modal-section">
-        <h2 class="modal-heading">Поиск гостиницы в Седоне</h2>
+        <div class="modal-wrapper">
+          <h2 class="modal-heading">Поиск гостиницы в Седоне</h2>
           <button class="modal-button-close" type="button">
             <span class="visually-hidden">Закрыть.</span>
           </button>
+        </div>
         <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="modal-form-group arrival-form-group">
             <label class="modal-label" for="arrival-date">Дата Заезда:</label>
@@ -181,7 +183,7 @@
                 <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 9v2h14V9H3Z"/></svg>
                 <span class="visually-hidden">Уменьшить.</span>
               </button>
-              <input class="person-count" type="number" value="2" required>
+              <input class="person-count" type="number" name="adults" value="2" required>
               <button class="button-count button-count-plus" type="button">
                 <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/></svg>
                 <span class="visually-hidden">Увеличить.</span>
@@ -197,7 +199,7 @@
                 <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 9v2h14V9H3Z"/></svg>
                 <span class="visually-hidden">Уменьшить.</span>
               </button>
-              <input class="person-count" type="number" value="2" required>
+              <input class="person-count" type="number" name="children" value="2" required>
               <button class="button-count button-count-plus" type="button">
                 <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/></svg>
                 <span class="visually-hidden">Увеличить.</span>
