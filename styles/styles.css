@@ -1602,9 +1602,11 @@ body {
   z-index: 1;
 }
 
-/* .modal-container-close {
+/* Вкл/выкл модального окна
+.modal-container-close {
   display: none;
-} */
+}
+*/
 
 .modal-section {
   margin: auto;
