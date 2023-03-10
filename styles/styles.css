@@ -27,7 +27,7 @@ html {
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -1085,7 +1085,7 @@ body {
   font-family: inherit;
   position: relative;
   -webkit-appearance: none;
-       appearance: none;
+  appearance: none;
   background-image: url("../images/catalog/catalog-cards-header/arrow-down.svg");
   background-repeat: no-repeat;
   background-position: right 18px center;
@@ -1832,15 +1832,12 @@ body {
   border: 3px solid transparent;
   box-sizing: border-box;
   text-align: center;
+  -moz-appearance: textfield;
 }
 
 .person-count::-webkit-outer-spin-button,
 .person-count::-webkit-inner-spin-button {
-	display: none;
-}
-
-.person-count {
-  -moz-appearance: textfield;
+  display: none;
 }
 
 .person-count:hover {
