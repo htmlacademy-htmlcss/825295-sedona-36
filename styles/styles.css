@@ -1500,6 +1500,7 @@ body {
   padding: 40px 70px 30px 70px;
   box-sizing: border-box;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -1556,7 +1557,6 @@ body {
   color: #000000;
   text-align: center;
   margin: 0 auto;
-  padding-top: 4px;
   outline: none;
   display: flex;
   flex-wrap: wrap;
@@ -1602,9 +1602,9 @@ body {
   z-index: 1;
 }
 
-/* .modal-container-close {
+.modal-container-close {
   display: none;
-} */
+}
 
 .modal-section {
   margin: auto;
@@ -1728,8 +1728,8 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   position: absolute;
-  bottom: -26px;
-  left: 137px;
+  bottom: -24px;
+  left: 135px;
 }
 
 .departure-form-group .modal-description {
@@ -1767,7 +1767,7 @@ body {
 .tooltip {
   margin-top: auto;
   margin-bottom: auto;
-  margin-right: 40px;
+  margin-right: 67px;
   position: relative;
 }
 
@@ -1776,17 +1776,10 @@ body {
   height: 26px;
   border: none;
   border-radius: 50%;
-  position: relative;
-}
-
-.tooltip-toggle::after {
-  position: absolute;
-  top: -2px;
-  left: -5px;
-  content: "";
-  width: 26px;
-  height: 26px;
   background: url("../images/index/modal/tooltip.svg") no-repeat;
+  position: absolute;
+  top: -14px;
+  left: -5px;
 }
 
 .tooltip-text {
@@ -1801,7 +1794,7 @@ body {
   box-sizing: border-box;
   width: 256px;
   position: absolute;
-  top: 43px;
+  top: 27px;
   left: -121px;
   display: none;
   z-index: 1;
