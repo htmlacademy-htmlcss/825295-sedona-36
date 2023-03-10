@@ -1602,9 +1602,9 @@ body {
   z-index: 1;
 }
 
-.modal-container-close {
+/* .modal-container-close {
   display: none;
-}
+} */
 
 .modal-section {
   margin: auto;
@@ -1738,7 +1738,8 @@ body {
 
 .modal-section-container {
   display: flex;
-  width: 577px;
+  flex-wrap: wrap;
+  width: 578px;
   margin-bottom: 48px;
 }
 
