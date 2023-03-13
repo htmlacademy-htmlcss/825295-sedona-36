@@ -114,7 +114,8 @@
           <h2 class="subscription-title">Подпишитесь на рассылку</h2>
           <p class="subscription-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="get">
-            <input class="subscription-input" type="email" name="email" placeholder="Ваш e-mail" required>
+            <label class="visually-hidden" for="email">Ваш e-mail.</label>
+            <input class="subscription-input" type="email" name="email" id="email" placeholder="Ваш e-mail" required>
             <button class="subscription-button" type="submit">Подписаться</button>
           </form>
         </section>
@@ -159,29 +160,29 @@
         <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="modal-form-group arrival-form-group">
             <label class="modal-label" for="arrival-date">Дата Заезда:</label>
-            <input class="modal-input" type="text" name="arrival-date" id="arrival-date" value="27 апреля 2020" placeholder="Укажите дату" required>
+            <input class="modal-input" type="text" name="arrival-date" value="27 апреля 2020" id="arrival-date" placeholder="Укажите дату" required>
             <p class="modal-description">Мы не можем отправить вас в прошлое.</p>
           </fieldset>
           <fieldset class="modal-form-group departure-form-group">
             <label class="modal-label departure-label" for="departure-date">Дата Выезда:</label>
-            <input class="modal-input" type="text" name="departure-date" id="departure-date" value="1 сентября 2023" placeholder="Укажите дату" required>
+            <input class="modal-input" type="text" name="departure-date" value="1 сентября 2023" id="departure-date" placeholder="Укажите дату" required>
             <p class="modal-description">На эти даты есть свободные номера. Пока есть.</p>
           </fieldset>
           <div class="modal-section-container">
             <section class="modal-section-age modal-section-adults">
-              <h3 class="modal-age-heading">Взрослые:</h3>
+              <label class="modal-age-label" for="adults">Взрослые:</label>
               <button class="button-count button-count-minus" type="button">
                 <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 9v2h14V9H3Z"/></svg>
                 <span class="visually-hidden">Уменьшить.</span>
               </button>
-              <input class="person-count" type="number" name="adults" value="2" required>
+              <input class="person-count" type="number" name="adults" value="2" id="adults" required>
               <button class="button-count button-count-plus" type="button">
                 <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/></svg>
                 <span class="visually-hidden">Увеличить.</span>
               </button>
             </section>
             <section class="modal-section-age modal-section-children">
-              <h3 class="modal-age-heading">Дети:</h3>
+              <label class="modal-age-label" for="children">Дети:</label>
               <span class="tooltip">
                 <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date"></button>
                 <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
@@ -190,7 +191,7 @@
                 <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 9v2h14V9H3Z"/></svg>
                 <span class="visually-hidden">Уменьшить.</span>
               </button>
-              <input class="person-count" type="number" name="children" value="2" required>
+              <input class="person-count" type="number" name="children" value="2" id="children" required>
               <button class="button-count button-count-plus" type="button">
                 <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/></svg>
                 <span class="visually-hidden">Увеличить.</span>
