@@ -1602,11 +1602,9 @@ body {
   z-index: 1;
 }
 
-/* Вкл/выкл модального окна
 .modal-container-close {
   display: none;
 }
-*/
 
 .modal-section {
   margin: auto;
@@ -1756,12 +1754,13 @@ body {
   margin-right: 0;
 }
 
-.modal-section-children .modal-age-heading {
+.modal-section-children .modal-age-label {
   margin-right: 15px;
 }
 
-.modal-age-heading {
+.modal-age-label {
   font-size: 20px;
+  font-weight: 700;
   line-height: 24px;
   margin: 0;
   margin-right: 46px;
