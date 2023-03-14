@@ -269,9 +269,9 @@ body {
 .hero {
   padding: 51px 371px 82px 371px;
   box-sizing: border-box;
+  background-color: #6c879e;
   background-image: url("../images/index/welcome/index-background.jpg");
   background-repeat: no-repeat;
-  background-color: #6c879e;
   position: relative;
   width: 1200px;
 }
@@ -545,10 +545,10 @@ body {
 }
 
 .subscription-index {
+  background-color: #496d82;
   background-image: url("../images/index/subscribe.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #496d82;
 }
 
 .subscription-form {
@@ -589,6 +589,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   color: #000000;
+  background-color: #f2f2f2;
 }
 
 .subscription-input:hover {
@@ -654,10 +655,10 @@ body {
 }
 
 .hotel-parameters {
+  background-color: #4b5f74;
   background-image: url("../images/catalog/catalog-filter/filter.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #4b5f74;
   padding: 35px 70px 70px;
   box-sizing: border-box;
 }
@@ -1120,31 +1121,30 @@ body {
   margin-right: 0;
 }
 
-.view-mode-button {
+.view-mode-link {
   padding: 14px 12px;
   width: 48px;
   height: 48px;
-  cursor: pointer;
-  background-color: #ffffff;
   border: 2px solid #e5e5e5;
   box-sizing: border-box;
   border-radius: 4px;
+  display: block;
 }
 
-.view-mode-button:hover {
+.view-mode-link:hover {
   border: 2px solid #000000;
 }
 
-.view-mode-button:focus-visible {
+.view-mode-link:focus-visible {
   border: 2px solid #68a2ca;
   outline: none;
 }
 
-.view-mode-button:active {
+.view-mode-link:active {
   border: 2px solid #000000;
 }
 
-.view-mode-item-grid .view-mode-button {
+.view-mode-item-grid .view-mode-link {
   background-image: url("../images/catalog/catalog-cards-header/modal-window-grid.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -1152,14 +1152,14 @@ body {
   border: 2px solid #000000;
 }
 
-.view-mode-item-full-screen .view-mode-button {
+.view-mode-item-full-screen .view-mode-link {
   background-image: url("../images/catalog/catalog-cards-header/modal-window-fullscreen.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 16px 14px;
 }
 
-.view-mode-listing .view-mode-button {
+.view-mode-listing .view-mode-link {
   background-image: url("../images/catalog/catalog-cards-header/modal-window-list.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -1699,6 +1699,7 @@ body {
   border: none;
   border-radius: 4px;
   position: relative;
+  background-color: #f2f2f2;
   background-image: url("../images/index/modal/date.svg");
   background-repeat: no-repeat;
   background-size: 20px 20px;
@@ -1860,8 +1861,13 @@ body {
   cursor: pointer;
   position: relative;
   border: none;
+  border-radius: 4px 0 0 4px;
   box-sizing: border-box;
   outline: none;
+}
+
+.button-count-plus {
+  border-radius: 0 4px 4px 0;
 }
 
 .button-count svg {
