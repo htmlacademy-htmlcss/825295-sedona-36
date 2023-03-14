@@ -120,9 +120,9 @@
                   <legend class="filter-title">Стоимость, ₽:</legend>
                   <div class="input-wrapper">
                     <label class="filter-label-cost filter-label-cost-from" for="min-cost">от</label>
-                    <input class="filter-input" type="text" name="min-cost" value="0" id="min-cost">
+                    <input class="filter-input" type="text" name="min-cost" value="0" id="min-cost" required>
                     <label class="filter-label-cost filter-label-cost-before" for="max-cost">до</label>
-                    <input class="filter-input filter-input-second" type="text" name="max-cost" value="9000" id="max-cost">
+                    <input class="filter-input filter-input-second" type="text" name="max-cost" value="9000" id="max-cost" required>
                   </div>
                   <div class="range">
                     <div class="range-scale" style="right: 61px; width: 226px">
@@ -158,19 +158,19 @@
             </select>
             <ul class="view-mode-list">
               <li class="view-mode-item view-mode-item-grid">
-                <button class="view-mode-button" type="button">
+                <a class="view-mode-link" href="#">
                   <span class="visually-hidden">Сетка.</span>
-                </button>
+                </a>
               </li>
               <li class="view-mode-item view-mode-item-full-screen">
-                <button class="view-mode-button" type="button">
+                <a class="view-mode-link" href="#">
                   <span class="visually-hidden">Полноэкранный режим.</span>
-                </button>
+                </a>
               </li>
               <li class="view-mode-item view-mode-listing">
-                <button class="view-mode-button" type="button">
+                <a class="view-mode-link" href="#">
                   <span class="visually-hidden">Список.</span>
-                </button>
+                </a>
               </li>
             </ul>
           </header>
